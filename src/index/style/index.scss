@@ -1,0 +1,1278 @@
+@import '../../shared/styles/import';
+@import '../../shared/icons/css/icons';
+
+// ここから書いてください。
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$font-family:'源ノ角ゴシック',sans-serif;
+@mixin fontSmall {
+  font-family:$font-family;
+  font-size:14px;
+  font-weight: normal;
+}
+@mixin font($size){
+  font-family:$font-family;
+  font-size:$size;
+  color:#4B4B4B;
+}
+@mixin center{
+  margin-right:auto;
+  margin-left:auto;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.header {
+  width: 100%; 
+  height: 80px; 
+  background-color: white; 
+  position: fixed;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05); 
+  &__figure{
+    width:9.375%;
+    height:46px;
+    margin-left:8.75%;
+    margin-top:17px;
+    float:left;
+  }
+  &__subtitle{
+    float:left;
+    width:21.5%;
+    height: 41px;
+    margin-top:20px;
+    margin-left:60px;
+  }
+  &__text{
+   @include fontSmall;
+  }
+  &__button{
+    margin-top:13px;
+    background-color:#0D67FF;
+    height:56px; 
+    width:26%;
+    margin-left:25%;
+    border-radius:5px;
+    line-height:56px;
+    text-align: center;
+    float:left;
+    &--sp{
+      display:none;
+    }
+  }
+   
+  &__link {
+    font-family:$font-family;
+    font-size:16px;
+    vertical-align: middle; 
+    font-weight: bold;
+    color:white;
+  }
+ 
+} 
+.main1{
+  width: 100%;;
+  height: 800px;
+  background-image:url(../image/bg_wave1.png);
+  background-repeat: no-repeat;
+  background-size:112%;
+  background-position: center;
+  overflow: hidden;
+  &__left{
+    width:39.6%;
+    height:423px;
+    margin-left:8.75%;
+    margin-top:251px;
+    float: left;
+  }
+  &__title--pc{
+    @include font(40px);
+    font-weight: bold;
+  }
+  &__title--sp{
+    display:none;
+  }
+  &__body--pc{
+    width:356px;
+    height: 85px;
+    margin-top:32px;
+  }
+  &__subtitle--pc{
+    @include font(28px);
+    font-weight: bold;
+  }
+  &__body--sp{
+    display:none;
+  }
+  &__square1{
+    margin-left:10px;
+    width:6px;
+    height: 6px;
+    background-color:#F6404F;
+    float:left;
+  }
+  &__square{
+    margin-left:22px;
+    width:6px;
+    height: 6px;
+    background-color:#F6404F;
+    float:left;
+  }
+  &__button{
+    margin-top:77px;
+    background-color:#0D67FF;
+    height:56px; 
+    width:334px;
+    border-radius:5px;
+    line-height:56px;
+    text-align: center;
+  }
+  &__link {
+    font-family:$font-family;
+    font-size:16px;
+    vertical-align: middle; 
+    font-weight: bold;
+    color:white;
+  }
+  &__right--pc{
+    height:601px;
+    width:46.8%;
+    margin-top:91px;
+    float: left;
+  }
+  &__right--sp{
+    display: none;
+  }
+  &__image--pc{
+    width:96%;
+    height:100%;
+  }
+}
+.main2{
+  width: 100%;;
+  height: 743px;
+  overflow: hidden; 
+  &__container{
+    display: flex;
+    justify-content: center;
+  }
+  &__top{
+    width: 590px;
+    height: 109px;
+    margin-top:78px;    
+    @include center;
+  }
+  &__dig{
+    width:7.11%;
+    height: 109px;
+    background: linear-gradient(75deg, white, white 45.5%, #F6404F 45.5%,#F6404F 50.5%, white 50.5%, white);
+    float:left;
+  }
+  &__title{
+    text-align: center;
+    color:#4B4B4B;
+  }
+  &__titleText{
+    width:84%;
+    height: 109px;
+    font-family:$font-family;
+    font-size:36px;
+    font-weight: bold;
+    float: left;
+  }
+  &__dig2{
+    width:7.11%;
+    height: 109px;
+    background: linear-gradient(105deg, white, white 45.5%, #F6404F 45.5%,#F6404F 50.5%, white 50.5%, white);
+    float:left;
+  }
+  &__box{
+    width:322px;
+    height: 410px;
+    margin-top:67px;
+    margin-right:50px;
+  }
+  &__boxTitle{
+    text-align: center;
+    color:#4B4B4B;
+  }
+  &__boxText{
+    font-family:$font-family;
+    font-size:20px;
+    font-weight: bold;  
+  }
+  &__boxFigure{
+    width:176px;
+    margin-top:50px;
+    margin-left:30px;
+  }
+  &__boxContent{
+    margin-top:18px;
+    @include fontSmall;
+    color:#4B4B4B;
+  }
+  &__box2{
+    width:322px;
+    height: 410px;
+    margin-top:67px;
+  }
+  &__box2Title{
+    text-align: center;
+    color:#4B4B4B;
+  }
+  &__box2Text{
+    font-family:$font-family;
+    font-size:20px;
+    font-weight: bold;  
+  }
+  &__box2Figure{
+    width:176px;
+    margin-top:50px;
+    margin-left:30px;
+  }
+  &__box2Content{
+    margin-top:18px;
+    @include fontSmall;
+    color:#4B4B4B;
+  }
+  &__box3{
+    width:322px;
+    height: 410px;
+    margin-top:67px;
+    margin-left:50px;
+}
+  &__box3Title{
+    text-align: center;
+    color:#4B4B4B;
+  }
+  &__box3Text{
+    font-family:$font-family;
+    font-size:20px;
+    font-weight: bold;
+  }
+  &__box3Figure{
+    width:176px;
+    margin-top:50px;
+    margin-left:30px;
+  }
+  &__box3Content{
+    margin-top:18px;
+    @include fontSmall;
+    color:#4B4B4B;
+  }
+}
+.main3{
+  width: 100%;;
+  height: 740px;
+  background-image:url(../image/bg_wave2.png);
+  background-repeat: no-repeat;
+  background-size:112%;
+  background-position: center;
+  overflow: hidden;
+  &__top{
+    width:548px;
+    height: 106px;
+    @include center;
+    margin-top:143px;
+    text-align: center;
+  }
+  &__topTitle{
+    @include font(35px);
+    font-weight: bold;
+  }
+  &__redLine{
+    height:4px;
+    width:74px;
+    @include center;
+    margin-top: 44px;
+    background-color: red;
+    border-radius:20%;
+  }
+  &__content1{
+    margin-top:39px;
+    margin-left:14.2%;
+    width:394px;
+    height: 71px;
+  }
+  &__content1Figure{
+    width:48px;
+    height:48px;
+    margin-top:17px;
+    float: left;
+  }
+  &__content1Subtitle{
+    width:336px;
+    height: 71px;
+    margin-left:10px;
+    margin-top:8px;
+    float: left;
+    @include font(24px);
+    font-weight: bold;
+  }
+  &__content2{
+    margin:0 auto;
+    width:394px;
+    height:71px;
+    margin-top:40px;
+
+  }
+  &__content2Figure{
+    width:48px;
+    height:48px;
+    margin-top:17px;
+    float: left;
+  }
+  &__content2Subtitle{
+    width:336px;
+    height: 71px;
+    margin-left:10px;
+    margin-top:8px;
+    @include font(24px);
+    float: left;
+    font-weight: bold;
+  }
+  &__content3{
+    width:394px;
+    height:71px;
+    margin-left:58%;
+    margin-top:40px;
+  }
+  &__content3Figure{
+    width:48px;
+    height:48px;
+    margin-top:17px;
+    float: left;
+  }
+  &__content3Subtitle{
+    width:336px;
+    height: 71px;
+    margin-left:10px;
+    margin-top:8px;
+    float: left;
+    @include font(24px);
+    font-weight: bold;
+  }
+}
+@mixin triangle{
+  width: 0;
+  height: 0;
+  border-left: 37px solid transparent;
+  border-right: 37px solid transparent;
+  border-top: 37px solid #0D67FF;
+}
+.main4{
+  width: 100%;;
+  height: 740px;
+  overflow: hidden;
+  &__item{
+    width:74px;
+    height: 100px;
+    @include center;
+    margin-top:40px;
+  }
+  &__itemTriangle1{
+    @include triangle;
+    margin:0 auto;
+  }
+  &__itemTriangle2{
+    @include triangle;
+    @include center;
+    margin-top:34px;
+  }
+  &__itemTriangle3--sp{
+    display:none;
+  }
+  &__title{
+    margin-top:40px;
+    width:207px;
+    height: 40px;
+    @include center;
+  }
+  &__titleText{
+    font-weight: bold;
+    @include font(28px);
+  }
+  &__left{
+    width:37.5%;
+    height:416px;
+    margin-top:48px;
+    margin-left: 8.4%;
+    float: left;
+  }
+  &__title2{
+    width:480px;
+    height: 142px;
+  }
+  &__title2Text{
+    font-family:$font-family;
+    font-size:48px;
+    font-weight: bold;
+    color:#0D67FF;
+    text-shadow: 1px 2px 7px #aaa;
+  }
+  &__circle1{
+    margin-left:19px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:#F6404F;
+    float:left;
+  }
+  &__circle{
+    margin-left:39px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:#F6404F;
+    float:left;
+  }
+  &__figure--sp{
+    display:none;
+  }
+  &__content{
+    width:434px;
+    height: 142px;
+    margin-top:40px;
+  }
+  &__contentText{
+    font-family:$font-family;
+    font-size:20px;
+    font-weight: normal;
+  }
+  &__button{
+    margin-top:38px;
+    background-color:#0D67FF;
+    height:56px; 
+    width:334px;
+    border-radius:5px;
+    line-height:56px;
+    text-align: center;
+  }
+  &__buttonLink {
+    font-family:$font-family;
+    font-size:16px;
+    vertical-align: middle; 
+    font-weight: bold;
+    color:white;
+  }
+  &__right{
+    width:42%;
+    height:416px;
+    margin-top:48px;
+    margin-left: 5.3%;
+    float: left;
+  }
+  &__rightImage{
+    width:100%;
+    height:416px;
+  }
+}
+.main5{
+  width: 100%;
+  height: 802px;
+  overflow: hidden;
+  &__dig{
+    width:7.11%;
+    height: 109px;
+    background: linear-gradient(75deg, white, white 45.5%, #F6404F 45.5%,#F6404F 50.5%, white 50.5%, white);
+    float:left;
+  }
+  &__top{
+    margin-top:65px;
+    width:468px;
+    height: 109px;
+    @include center;
+  }
+  &__title{
+    text-align: center;
+    color:#4B4B4B;
+  }
+  &__titleText{
+    width:382px;
+    height: 109px;
+    font-family:$font-family;
+    font-size:36px;
+    font-weight: bold;
+    float: left;
+  }
+  &__dig2{
+    width:7.11%;
+    height: 109px;
+    background: linear-gradient(105deg, white, white 45.5%, #F6404F 45.5%,#F6404F 50.5%, white 50.5%, white);
+    float:left;
+  }
+  &__container{
+    display: flex;
+    justify-content: center;
+    margin-top:65px;
+  }
+  &__boxNumber{
+    width:42px;
+    height:52px;
+    @include center;
+    margin-top:12px;
+  }
+  &__boxTitle{
+    font-family:$font-family;
+    font-size:36px;
+    font-weight: bold;
+    color:#0D67FF;
+  }
+  &__redLine2{
+    height:4px;
+    width:24px;
+    margin-left:45.5%;
+    background-color: red;
+    border-radius:20%;
+  }
+  &__subtitle{
+    text-align: center;
+    margin-top:17px;
+    width:99.3%;
+    height: 53px;
+  }
+  &__subtitleText{
+    font-family: Helevetica Nune;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__boxFigure{
+    width: 275px;
+    height:160px;
+    margin-top:20px;
+    @include center;
+  }
+  &__boxImage{
+    margin-left: 60px;
+    margin-top:16px;
+  }
+  &__boxContent{
+    margin-top:18px;
+    @include fontSmall;
+    color:#4B4B4B;
+  }
+  &__box{
+    width:25.3%;
+    height: 405px;
+    margin-right:35px;
+  }
+  &__box2{
+    width:25.3%;
+    height: 405px;
+  }
+  &__box3{
+    width:25.3%;
+    height: 405px;
+    margin-left:35px;
+  }
+  &__bottom{
+    margin-top:50px;
+    width:334px;
+    height:56px;
+    @include center;
+  }
+  &__button{
+    margin-top:38px;
+    background-color:#0D67FF;
+    height:56px; 
+    width:334px;
+    border-radius:5px;
+    line-height:56px;
+    text-align: center;
+  }
+  &__buttonLink {
+    font-family:$font-family;
+    font-size:16px;
+    vertical-align: middle; 
+    font-weight: bold;
+    color:white;
+  }
+}
+.main6{
+  width: 100%;;
+  height: 680px;
+  background-image:url(../image/ellipse.png);
+  background-size:cover;
+  background-position: 30% 0%;
+  overflow:hidden;
+  &__container{
+    display: flex;
+    justify-content: center;
+    margin-top:72px;
+  }
+  &__box{
+    width:15.8%;
+    height:142px;
+    margin-left:12.7%;
+    margin-right: 43px;
+  }
+  &__title{
+    margin-top:144px;
+    width: 496px;
+    height: 112px;
+    @include center;
+    text-align:center;
+  }
+  &__titleText{
+    font-family:$font-family;
+    font-size:36px;
+    font-weight: bold;
+    color:#4B4B4B;
+  }
+  &__redLine{
+    height:4px;
+    width:74px;
+    @include center;
+    margin-top: 44px;
+    background-color: red;
+    border-radius:20%;
+  }
+  &__subtitle{
+    @include font(16px);
+    font-weight: normal;
+  }
+  &__number{
+    width:28.2%;
+    height: 116px;
+    margin-left:28px;
+    float: left;
+  }
+  &__item{
+    width:17.46%;
+    height:100%;
+    margin-left:2%;
+    float: left;
+  }
+  &__itemImage{
+    margin-top:30px;
+  }
+  &__itemText{
+    @include font(18px);
+    font-weight: normal;
+    margin-top:22px;
+  }
+  &__box2{
+    width:34.84%;
+    height:142px;
+  }
+  &__subtitle2{
+    width:108px;
+    height: 26px;
+    margin-left:30.6%;
+  }
+  &__subtitle2Text{
+    @include font(18px);
+    font-weight: normal;
+  }
+  &__item2{
+    background-image:url(../image/bg_people.png);
+    background-position: center;
+    width:100%;
+    height:100px;
+    margin-top:14px;
+    background-repeat: no-repeat;
+  }
+  &__number2{
+    width:141px;
+    height:120px;
+    margin-left:27.6%;
+    float: left;
+  }
+  &__number2Image{
+    width:141px;
+    height:120px;
+    display: block;
+  }
+  &__unitText{
+    float: left;
+    margin-top:75px;
+    font-size:18px;
+    font-weight: normal;
+    color:#4B4B4B;
+  }
+  &__box3{
+    width:289px;
+    height:143px;
+    margin-left:39px;
+  }
+  &__subtitle3{
+    margin-left:80px;
+  }
+  &__subtitle3Text{
+    @include font(18px);
+    font-weight: normal;
+  }
+  &__number3{
+    margin-left: 60px;
+    margin-top:10px;
+  }
+  &__number3Image{
+    width:141px;
+    height:120px;
+    display: block;
+    float:left;
+  }
+  &__unit2{
+    float: left;
+    margin-top:75px;
+    font-size:18px;
+    font-weight: normal;
+    color:#4B4B4B;
+  }
+  &__item3{
+    background-image:url(../image/comment.png);
+    background-repeat: repeat-x;
+    background-position: 0% 100%;
+    width:225px;
+    height:100px;
+    margin-top:14px;
+  }
+}
+.footer{
+  height:300px;
+  width: 100%;;
+  background-color: white;
+  overflow: hidden;
+  &__content{
+    width:518px;
+    height: 155px;
+    position: relative;
+    margin-top:74px;
+    margin-left:42.3%;
+  }
+  &__titleText{
+    @include fontSmall;
+    color:#4B4B4B;
+  }
+  &__icon{
+    margin-top:6px;
+    margin-left:31px;
+  }
+  &__company{
+    margin-left:31px;
+    margin-top:60px;
+  }
+  &__companyName{
+    @include fontSmall;
+    color:#4B4B4B;
+  }
+  &__content2{
+    top:134px;
+    left:356px;
+    position: absolute;
+    width:161px;
+    height: 20px;
+  }
+  &__arrow01 {
+    display: block;
+    width: 10px;
+    margin-top:7px;
+    height: 10px;
+    border-top: solid 2px #697b91;
+    border-right: solid 2px #697b91;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    float: left;
+  }
+  &__link{
+    float: left;
+    margin-left:9px;
+    margin-top:2px;
+  }
+  &__linkText{
+    @include fontSmall;
+    color:#4B4B4B;
+  }
+  &__arrow02 {
+    display: block;
+    width: 10px;
+    margin-top:7px;
+    height: 10px;
+    margin-left:8px;
+    border-top: solid 2px #697b91;
+    border-right: solid 2px #697b91;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    float: left;
+  }
+}  
+  
+  
+
+@media screen and (max-width:769px) {
+  .header{
+    z-index: 1;
+    &__subtitle{
+      display:none;
+    }
+    &__button{
+      display: none;
+      &--sp{
+        margin-left:15.2%;
+        margin-top:15px;
+        background-color:#0D67FF;
+        height:48px;; 
+        width:42%;
+        border-radius:5px;
+        line-height:48px;
+        text-align: center;
+        float:left;
+        display: block;
+      }
+     
+    }
+   
+    &__figure{
+      width:32%;
+    }
+    
+    &__link--sp {
+      font-family:$font-family;
+      font-size:16px;
+      vertical-align: middle; 
+      font-weight: bold;
+      color:white;
+    }
+  }
+  .main1{
+    background-image:url(../image/sp-wave1.png);
+    background-repeat: no-repeat;
+    background-position: right 75% top 70%;
+    background-size:120% 550px;
+    height:667px;
+    &__body{
+      width:373px;
+      @include center;
+      position:relative;
+    }
+    &__left{
+      margin-top:133px;
+      width:53.3%;
+      height:177px;
+      float:left;
+    }
+    &__title--pc{
+      display:none;
+    }
+    &__title--sp{
+      @include font(28px);
+      font-weight: bold;
+      line-height:180%;
+      display:block;
+    }
+    &__body--pc{
+      display:none;
+    }
+    &__body--sp{
+      margin-top:200px;
+      line-height:200%; 
+      text-align:center;
+      display:block;
+      @include center;
+    }
+    &__subtitle--sp{
+      @include font(20px);
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    &__square1{
+      margin-left:120px;
+      width:4px;
+      height: 4px;
+      background-color:#F6404F;
+      float:left;
+    }
+    &__square{
+      margin-left:17px;
+      width:4px;
+      height: 4px;
+      background-color:#F6404F;
+      float:left;
+    }
+    &__right--pc{
+      display:none;
+    }
+    &__right--sp{
+      height:312px;
+      width:344px;
+      top:190px;
+      left:33px;
+      position: absolute;
+      display: block; 
+    }
+    &__button{
+     display:none;
+    }
+  }
+  
+  .main2{
+    height: 1480px;
+    &__container {
+      display:block;
+    }
+    &__top{
+      width:307px;
+      height: 60px;
+      margin-top:0px;
+    }
+    &__boxFigure{
+      margin-top:10px; 
+    }
+    &__dig{
+      height:60px;
+    }
+    &__dig2{
+      height:60px;
+    }
+    &__titleText {
+      width:260px;
+      height:60px;
+      font-size:20px;
+    }
+    &__box{
+      @include center;
+    }
+    &__box2{
+      @include center;
+    }
+    &__box3{
+      @include center;
+    }
+  }
+  .main3{
+    background-image:url(../image/sp-wave2.png);
+    background-repeat: no-repeat;
+    background-position: right 40% top 90%;
+    background-size:115% 580px;
+    height:600px;
+    &__top{
+      width:310px;
+      height:59px;
+    }
+    &__topTitle{
+      font-size:20px;
+    }
+    &__redLine{
+      width:24px;
+      margin-top:29px;
+    }
+    &__content1{
+      width:290px;
+      height:49px;
+      @include center;
+    }
+    &__content1Subtitle{
+      margin-top:20px;
+      width:224px;
+      height:48px;
+      font-size:16px;
+    }
+    &__content2{
+      width:290px;
+      height:49px;
+      @include center;
+    }
+    &__content2Subtitle{
+      margin-top:20px;
+      width:224px;
+      height:48px;
+      font-size:16px;
+    }
+    &__content3{
+      width:290px;
+      height:49px;
+      @include center;
+    }
+    &__content3Subtitle{
+      margin-top:20px;
+      width:224px;
+      height:48px;
+      font-size:16px;
+    }
+  }
+  .main4{
+    &__item{
+      width:29px;
+      height: 74px;
+    }
+    &__itemTriangle1{
+      border-left: 14.5px solid transparent;
+      border-right: 14.5px solid transparent;
+      border-top: 14.5px solid #0D67FF;
+    }
+    &__itemTriangle2{
+      border-left: 14.5px solid transparent;
+      border-right: 14.5px solid transparent;
+      border-top: 14.5px solid #0D67FF;
+      margin-top:14px;
+    }
+    &__itemTriangle3--sp{
+      border-left: 14.5px solid transparent;
+      border-right: 14.5px solid transparent;
+      border-top: 14.5px solid #0D67FF;
+      margin-top: 14px;
+      display: block;
+    }
+    &__left{
+      float:none;
+      width:100%;
+      margin-left:auto;
+      margin-top:0px;
+    }
+    &__title{
+      margin-top:32px;
+      width:103px;
+      height:20px;
+    }
+    &__titleText{
+      font-size:14px;
+    }
+    &__title2 {
+      width:280px;
+      height: 100px;
+      margin:0 auto;
+    }
+    &__title2Text{
+      font-size:28px;
+      text-align: center;
+
+    }
+    &__circle1{
+      margin-left:15px;
+      width:4px;
+      height: 4px;
+    }
+    &__circle{
+      margin-left:22px;
+      width:4px;
+      height: 4px;
+    }
+    &__button{
+      display:none;
+    }
+    &__right{
+      display:none;
+    }
+    &__figure--sp{
+      display:block;
+      width:300px;
+      height: 237px;
+      @include center;
+    }
+    &__image--sp{
+      width:300px;
+      height:237px;
+    
+    }
+    &__content{
+      width:318px;
+      height: 104px;
+      @include center;
+      margin-top:30px;
+    }
+    &__contentText{
+      font-size:14px;
+      line-height: 200%;
+    }
+  }
+  .main5{
+    width: 100%;
+    height: 1520px;
+    overflow: hidden;
+    &__dig{
+      height:60px;
+    }
+    &__dig2{
+      height:60px;
+    }
+    &__top{
+      margin-top:0px;
+      width:240px;
+      height:50px;
+    }
+    &__titleText{
+      width:190px;
+      height:59px;
+      font-size:19px;
+    }
+    &__container {
+      display:block;
+    }
+    &__box{
+      @include center;
+      margin-top:100px;
+      width:325px;
+      height: 405px;
+    }
+    &__box2{
+      @include center;
+      margin-top:70px;
+      width:325px;
+      height: 405px;
+    }
+    &__box3{
+      @include center;
+      margin-top:70px;
+      width:325px;
+      height: 405px;
+    }
+    &__boxContent{
+      line-height: 200%;
+    }
+    &__button{
+      display:none;
+    }
+  }
+  .main6{
+    &__title{
+      margin-top:80px;
+      width:276px;
+      height: 59px;
+    }
+    &__titleText{
+      font-size:20px;
+    }
+    &__redLine{
+      width:24px;
+      margin-top:29px;
+    }
+    &__container{
+      display:block;
+      margin-top:32px;
+    }
+    &__box{
+      width:100px;
+      height:102px;
+      @include center;
+    }
+    &__subtitle{
+      font-size:14px;
+    }
+    &__number{
+      width:38px;
+      height:90px;
+    }
+    &__numberImage{
+      width:33px;
+      height:81px;
+      margin-left:5px;
+    }
+    &__itemImage{
+      margin-top:15px;
+    }
+    &__itemText{
+      font-size:14px;
+      margin-top:15px;
+    }
+    &__box2{
+      width:375px;
+      height:140px;
+      background-image:url(../image/bg_people.png);
+      background-position: center;
+      @include center;
+      overflow: hidden;
+    }
+    &__subtitle2{
+      width:22.5%;
+      height: 20px;
+      @include center;
+      margin-top:20px;
+    }
+    &__subtitle2Text{
+      font-size:14px;
+      width:100%;
+      height: 100%;
+
+    }
+    &__item2{
+      background-image: none;
+      @include center;
+      width:131px;
+    }
+    &__number2 {
+      width:99px;
+      height:81px;
+      margin-left:10px;
+      margin-top:10px;
+    }
+    &__number2Image{
+      width:99px;
+      height:81px;
+    }
+    &__unitText{
+      font-size:14px;
+      margin-top:55px;
+    }
+    &__subtitle3{
+      @include center;
+      margin-top:20px;
+      
+    }
+    &__subtitle3Text{
+      margin-left:110px;
+      font-size:14px;
+    }
+    &__box3{
+      width:350px;
+      height:102px;
+      padding-left:30px;
+      @include center;
+    }
+  
+
+    &__number3Image{
+      width:84px;
+      height:81px;
+
+    }
+    &__unit2{
+      margin-top:50px;
+      font-size: 14px;
+    }
+    &__item3 {
+      width:230px;
+      height: 82px;
+      margin-top:0px;
+      margin-left:50px;
+    
+    }
+  }
+  .footer{
+    &__content{
+      @include center;
+      height: 190px;
+      width:185px;
+    }
+    &__content2{
+      top:100px;
+      left:10px;
+    }
+    &__companyName{
+      margin-top:100px;
+    }
+  }
+}
+@media screen and (max-width:355px) {
+  .main6{
+    &__box2{
+      width:100%;
+    }
+    &__subtitle2Text{
+      font-size:12px;
+      width:100%;
+      height: 100%;
+    }
+    &__box3{
+      margin-left:0px;
+      padding-left:20px;
+    }  
+  }
+}
+ 
+  
