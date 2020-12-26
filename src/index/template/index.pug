@@ -5,284 +5,255 @@ block vars
     var title = 'document'
 
 block main
-  //- ここから書いてください。
-doctype html
-html(lang='en')
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible' content='ie=edge')
-    link(rel='stylesheet' href='../style/index.scss')
-    title Document
-  body
-    .header
+  .main1
+    .main1__body
       .clearfix
-        .header__figure
-          img.header__logo(src='../image/logo-top.png' alt='')
-        .header__subtitle
-          p.header__text byLegalは無料で120名を越える弁護士に、匿名で質問ができるサービスです。
-        .header__button--pc
-          a.header__link--pc 今すぐ無料で始める！
-        .header__button--sp
-          a.header__link--sp 新規無料登録
-    .main1
-      .main1__body
+        .main1__left
+          h1.main1__title
+            | 契約書を読まない人は、
+            br
+            | 約束を守る気がない人！？
+          h2.main1__title--sp
+            | 契約書を
+            br
+            | 読まない人は、
+            br
+            | 約束を守る気が
+            br
+            | ない人！？
+          .main1__body--pc
+            p.main1__subtitle--pc 確認せずに承諾する会社は
+            .clearfix
+              .main1__square1
+              .main1__square
+              .main1__square
+              .main1__square
+              .main1__square
+              .main1__square
+              .main1__square
+            p.main1__subtitle--pc 信用されません
+          .main1__button
+            a.main1__link byLegalで弁護士に無料質問
+        .main1__right--pc
+          img.main1__image--pc(src='image/main1.png' alt='picture')
+        .main1__right--sp
+          img.main1__image--sp(src='image/main1-sp.png' alt='picture')
+      .main1__body--sp
+        p.main1__subtitle--sp 確認せずに承諾する会社は
         .clearfix
-          .main1__left
-            h1.main1__title--pc
-              | 契約書を読まない人は、
-              br
-              | 約束を守る気がない人！？
-            h2.main1__title--sp
-              | 契約書を
-              br
-              | 読まない人は、
-              br
-              | 約束を守る気が
-              br
-              | ない人！？
-            .main1__body--pc
-              p.main1__subtitle--pc 確認せずに承諾する会社は
-              .clearfix
-                .main1__square1
-                .main1__square
-                .main1__square
-                .main1__square
-                .main1__square
-                .main1__square
-                .main1__square
-              p.main1__subtitle--pc 信用されません
-            .main1__button
-              a.main1__link byLegalで弁護士に無料質問
-          .main1__right--pc
-            img.main1__image--pc(src='../image/main1.png' alt='picture')
-          .main1__right--sp
-            img.main1__image--sp(src='../image/main1-sp.png' alt='picture')
-        .main1__body--sp
-          p.main1__subtitle--sp 確認せずに承諾する会社は
-          .clearfix
-            .main1__square1
-            .main1__square
-            .main1__square
-            .main1__square
-            .main1__square
-            .main1__square
-            .main1__square
-          p.main1__subtitle--sp 信用されません
-    .main2
-      .main2__top
-        .clearfix
-          .main2__dig
-          .main2__title
-            h1.main2__titleText
-              | 法務担当者が間違いやすい、
-              br
-              | 契約書に関すること
-          .main2__dig2
-      .main2__container
-        .main2__box
-          .main2__boxTitle
-            h3.main2__boxText
-              | 確認せず、交渉せず、
-              br
-              | すぐに契約することが
-              br
-              | 誠意だと思っていませんか？
-          .main2__boxFigure
-            img.main2__boxImage(src='../image/list.png' alt='picture')
-          .main2__boxContent
-            p.main2__boxText2 契約書はお互いの約束を文章化したものです。自分がその約束を守れるがどうか、義務を負うべきかどうかを確認しない人は、そもそも約束を軽視しており、信用されません
-        .main2__box2
-          .main2__box2Title
-            h3.main2__box2Text
-              | わからない言葉があっても
-              br
-              | なんとなくで理解した
-              br
-              | 気になっていませんか？
-          .main2__box2Figure
-            img.main2__box2Image(src='../image/list_02.png' alt='picture')
-          .main2__box2Content
-            p.main2__box2Text2
-              | 法律用語と一般的な言葉は意味や解釈が異なるものが多いです。
-              br
-              | わかったつもりでももろるべき約束を正しく理解できてない可能性があります。
-        .main2__box3
-          .main2__box3Title
-            h3.main2__box3Text
-              | 頑張ってネットで
-              br
-              | 調べた情報が
-              br
-              | 正しいと思っていませんか？
-          .main2__box3Figure
-            img.main2__box3Image(src='../image/list3.png' alt='picture')
-          .main2__box3Content
-            p.main2__box3Text2
-              | あのウェキペディアですら誰でも編集できるサービスって知ってますか？
-              br
-              | 信憑性の低い情報源や法改正に対応していない情報で契約する人は信頼されません。
-    .main3
-      .main3__top
-        h1.main3__topTitle
-          | 弁護士は依頼したことない･･･
-          br
-          | お願いするにはまだまだ課題が･･･
-      .main3__redLine
-      .main3__content1
-        .clearfix
-          .main3__content1Figure
-            img.main3__content1Image(src='../image/question.png')
-          .main3__content1Subtitle
-            p.main3__content1Text
-              | 費用感がわからない･･･
-              br
-              | どれくらいが相場なのかも不明
-      .main3__content2
-        .clearfix
-          .main3__content2Figure
-            img.main3__content2Image(src='../image/sweat.png')
-          .main3__content2Subtitle
-            p.main3__content2Text
-              | 法務のことがよくわからない
-              br
-              | 時間もかけられない･･･
-      .main3__content3
-        .clearfix
-          .main3__content3Figure
-            img.main3__content3Image(src='../image/spiral.png')
-          .main3__content3Subtitle
-            p.main3__content3Text
-              | 相談するべき内容や
-              br
-              | 相談の仕方がわからない
-    .main4
-      .main4__item
-        .main4__itemTriangle1
-        .main4__itemTriangle2
-        .main4__itemTriangle3--sp
-      .main4__title
-        h3.main4__titleText これらのお悩み
+          .main1__square1
+          .main1__square
+          .main1__square
+          .main1__square
+          .main1__square
+          .main1__square
+          .main1__square
+        p.main1__subtitle--sp 信用されません
+  .main2
+    .main2__top
       .clearfix
-        .main4__left
-          .main4__title2
-            h1.main4__title2Text 全てbyLegalで、
-            .clearfix
-              .main4__circle1
-              .main4__circle
-              .main4__circle
-            h1.main4__title2Text 無料で解決できます！
-          .main4__figure--sp
-            img.main4__image--sp(src='../image/tv.png')
-          .main4__content
-            p.main4__contentText
-              | 無料で120名を越える弁護士に匿名で一斉質問！24時間待つだけで平均5名の弁護士から回答が得られます。契約する前にbyLegalを使って問題点や疑問点をなくしておきましょう。
-          .main4__button
-            a.main4__buttonLink 今すぐ無料で始める！
-        .main4__right
-          img.main4__rightImage(src='../image/tv.png')
-    .main5
-      .main5__top
-        .clearfix
-          .main5__dig
-          .main5__title
-            h1.main5__titleText
-              | byLegalが選ばれる、
-              br
-              | ３つのポイント
-          .main5__dig2
-      .main5__container
-        .main5__box
-          .main5__boxNumber
-            h3.main5__boxTitle 01
-          .main5__redLine2
-          .main5__subtitle
-            p.main5__subtitleText
-              | 弁護士への質問が完全無料！
-              br
-              | 実務を依頼するまではお金はかかりません！
-          .main5__boxFigure
-            img.main5__boxImage(src='../image/saving.png' alt='picture')
-          .main5__boxContent
-            p.main5__boxText 高いと思われがちな弁護士への質問も、byLegalでは完全無料！それだけではなく、様々な専門分野の弁護士から回答が得られます！
-        .main5__box2
-          .main5__boxNumber
-            h3.main5__boxTitle 02
-          .main5__redLine2
-          .main5__subtitle
-            p.main5__subtitleText
-              | 自分で調べる必要なし！
-              br
-              | まずは気軽に質問し、回答を待ちましょう
-          .main5__boxFigure
-            img.main5__boxImage(src='../image/thinking.png' alt='picture')
-          .main5__boxContent
-            p.main5__boxText インターネットの情報ではなく、弁護士の生の回答を信じましょう。弁護士の回答を確認後に、追加の相談もすることができます
-        .main5__box3
-          .main5__boxNumber
-            h3.main5__boxTitle 03
-          .main5__redLine2
-          .main5__subtitle
-            p.main5__subtitleText
-              | 150名の弁護士が登録中！
-              br
-              | 誰でも簡単に弁護士の回答が得られます
-          .main5__boxFigure
-            img.main5__boxImage(src='../image/lawyer.png') alt='picture')
-          .main5__boxContent
-            p.main5__boxText 弁護士への質問はやっぱりためらいがあるはず！しかしbyLegalでは匿名で質問できるので、気軽に質問できます！
-      .main5__bottom
-        .main5__button
-          a.main5__buttonLink 今すぐ無料で始める！
-    .main6
-      .main6__title
-        h1.main6__titleText
-          | 契約書の問題は弁護士に相談
-          br
-          | まずは登録から！
-      .main6__redLine
-      .main6__container
-        .main6__box
-          .main6__subtitle
-            p.main6__subtitleText サービス利用料
+        .main2__dig
+        .main2__title
+          h1.main2__titleText
+            | 法務担当者が間違いやすい、
+            br
+            | 契約書に関すること
+        .main2__dig2
+    .main2__container
+      .main2__box
+        .main2__boxTitle
+          h3.main2__boxText
+            | 確認せず、交渉せず、
+            br
+            | すぐに契約することが
+            br
+            | 誠意だと思っていませんか？
+        .main2__boxFigure
+          img.main2__boxImage(src='image/list.png' alt='picture')
+        .main2__boxContent
+          p.main2__boxText2 契約書はお互いの約束を文章化したものです。自分がその約束を守れるがどうか、義務を負うべきかどうかを確認しない人は、そもそも約束を軽視しており、信用されません
+      .main2__box2
+        .main2__box2Title
+          h3.main2__box2Text
+            | わからない言葉があっても
+            br
+            | なんとなくで理解した
+            br
+            | 気になっていませんか？
+        .main2__box2Figure
+          img.main2__box2Image(src='image/list_02.png' alt='picture')
+        .main2__box2Content
+          p.main2__box2Text2
+            | 法律用語と一般的な言葉は意味や解釈が異なるものが多いです。
+            br
+            | わかったつもりでももろるべき約束を正しく理解できてない可能性があります。
+      .main2__box3
+        .main2__box3Title
+          h3.main2__box3Text
+            | 頑張ってネットで
+            br
+            | 調べた情報が
+            br
+            | 正しいと思っていませんか？
+        .main2__box3Figure
+          img.main2__box3Image(src='image/list3.png' alt='picture')
+        .main2__box3Content
+          p.main2__box3Text2
+            | あのウェキペディアですら誰でも編集できるサービスって知ってますか？
+            br
+            | 信憑性の低い情報源や法改正に対応していない情報で契約する人は信頼されません。
+  .main3
+    .main3__top
+      h1.main3__topTitle
+        | 弁護士は依頼したことない･･･
+        br
+        | お願いするにはまだまだ課題が･･･
+    .main3__redLine
+    .main3__content1
+      .clearfix
+        .main3__content1Figure
+          img.main3__content1Image(src='image/question.png')
+        .main3__content1Subtitle
+          p.main3__content1Text
+            | 費用感がわからない･･･
+            br
+            | どれくらいが相場なのかも不明
+    .main3__content2
+      .clearfix
+        .main3__content2Figure
+          img.main3__content2Image(src='image/sweat.png')
+        .main3__content2Subtitle
+          p.main3__content2Text
+            | 法務のことがよくわからない
+            br
+            | 時間もかけられない･･･
+    .main3__content3
+      .clearfix
+        .main3__content3Figure
+          img.main3__content3Image(src='image/spiral.png')
+        .main3__content3Subtitle
+          p.main3__content3Text
+            | 相談するべき内容や
+            br
+            | 相談の仕方がわからない
+  .main4
+    .main4__item
+      .main4__itemTriangle1
+      .main4__itemTriangle2
+      .main4__itemTriangle3--sp
+    .main4__title
+      h3.main4__titleText これらのお悩み
+    .clearfix
+      .main4__left
+        .main4__title2
+          h1.main4__title2Text 全てbyLegalで、
           .clearfix
-            .main6__number
-              img.main6__numberImage(src='../image/0.png' alt='picture')
-            .main6__item
-              img.main6__itemImage(src='../image/star.png' alt='picture')
-              p.main6__itemText 円
-        .main6__box2
-          .main6__subtitle2
-            p.main6__subtitle2Text 登録弁護士数
-          .main6__item2
-            .clearfix
-              .main6__number2
-                img.main6__number2Image(src='../image/1002.png' alt='picture')
-              .main6__unit
-                p.main6__unitText 名
-        .main6__box3
-          .main6__subtitle3
-            p.main6__subtitle3Text 平均回答数
-          .main6__item3
-            .clearfix
-              .main6__number3
-                img.main6__number3Image(src='../image/3.5.png' alt='picture')
-              .main6__unit2
-                p.main6__unit2Text 件
-    .footer
-      .footer__container
-        .footer__content
-          .footer__title
-            p.footer__titleText 法律を味方に、企業を伸ばす
-          .footer__icon
-            img.footer__iconImage(src='../image/icon.png' alt='picture')
-          .footer__company
-            p.footer__companyName ©2020 ATTIVITA Inc.
-          .footer__content2
-            .clearfix
-              .footer__arrow01
-              .footer__link
-                a.footer__linkText 利用規約
-              .footer__arrow02
-              .footer__link
-                a.footer__linkText 運営会社
+            .main4__circle1
+            .main4__circle
+            .main4__circle
+          h1.main4__title2Text 無料で解決できます！
+        .main4__figure--sp
+          img.main4__image--sp(src='../image/tv.png')
+        .main4__content
+          p.main4__contentText
+            | 無料で120名を越える弁護士に匿名で一斉質問！24時間待つだけで平均5名の弁護士から回答が得られます。契約する前にbyLegalを使って問題点や疑問点をなくしておきましょう。
+        .main4__button
+          a.main4__buttonLink 今すぐ無料で始める！
+      .main4__right
+        img.main4__rightImage(src='../image/tv.png')
+  .main5
+    .main5__top
+      .clearfix
+        .main5__dig
+        .main5__title
+          h1.main5__titleText
+            | byLegalが選ばれる、
+            br
+            | ３つのポイント
+        .main5__dig2
+    .main5__container
+      .main5__box
+        .main5__boxNumber
+          h3.main5__boxTitle 01
+        .main5__redLine2
+        .main5__subtitle
+          p.main5__subtitleText
+            | 弁護士への質問が完全無料！
+            br
+            | 実務を依頼するまではお金はかかりません！
+        .main5__boxFigure
+          img.main5__boxImage(src='../image/saving.png' alt='picture')
+        .main5__boxContent
+          p.main5__boxText 高いと思われがちな弁護士への質問も、byLegalでは完全無料！それだけではなく、様々な専門分野の弁護士から回答が得られます！
+      .main5__box2
+        .main5__boxNumber
+          h3.main5__boxTitle 02
+        .main5__redLine2
+        .main5__subtitle
+          p.main5__subtitleText
+            | 自分で調べる必要なし！
+            br
+            | まずは気軽に質問し、回答を待ちましょう
+        .main5__boxFigure
+          img.main5__boxImage(src='../image/thinking.png' alt='picture')
+        .main5__boxContent
+          p.main5__boxText インターネットの情報ではなく、弁護士の生の回答を信じましょう。弁護士の回答を確認後に、追加の相談もすることができます
+      .main5__box3
+        .main5__boxNumber
+          h3.main5__boxTitle 03
+        .main5__redLine2
+        .main5__subtitle
+          p.main5__subtitleText
+            | 150名の弁護士が登録中！
+            br
+            | 誰でも簡単に弁護士の回答が得られます
+        .main5__boxFigure
+          img.main5__boxImage(src='../image/lawyer.png' alt='picture')
+        .main5__boxContent
+          p.main5__boxText 弁護士への質問はやっぱりためらいがあるはず！しかしbyLegalでは匿名で質問できるので、気軽に質問できます！
+    .main5__bottom
+      .main5__button
+        a.main5__buttonLink 今すぐ無料で始める！
+  .main6
+    .main6__title
+      h1.main6__titleText
+        | 契約書の問題は弁護士に相談
+        br
+        | まずは登録から！
+    .main6__redLine
+    .main6__container
+      .main6__box
+        .main6__subtitle
+          p.main6__subtitleText サービス利用料
+        .clearfix
+          .main6__number
+            img.main6__numberImage(src='../image/0.png' alt='picture')
+          .main6__item
+            img.main6__itemImage(src='../image/star.png' alt='picture')
+            p.main6__itemText 円
+      .main6__box2
+        .main6__subtitle2
+          p.main6__subtitle2Text 登録弁護士数
+        .main6__item2
+          .clearfix
+            .main6__number2
+              img.main6__number2Image(src='../image/1002.png' alt='picture')
+            .main6__unit
+              p.main6__unitText 名
+      .main6__box3
+        .main6__subtitle3
+          p.main6__subtitle3Text 平均回答数
+        .main6__item3
+          .clearfix
+            .main6__number3
+              img.main6__number3Image(src='../image/3.5.png' alt='picture')
+            .main6__unit2
+              p.main6__unit2Text 件
+
+
+
+
+
+
+              
+  

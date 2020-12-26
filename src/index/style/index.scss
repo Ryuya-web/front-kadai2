@@ -66,7 +66,6 @@ $font-family:'源ノ角ゴシック',sans-serif;
       display:none;
     }
   }
-   
   &__link {
     font-family:$font-family;
     font-size:16px;
@@ -91,12 +90,12 @@ $font-family:'源ノ角ゴシック',sans-serif;
     margin-top:251px;
     float: left;
   }
-  &__title--pc{
+  &__title{
     @include font(40px);
     font-weight: bold;
-  }
-  &__title--sp{
-    display:none;
+    &--sp{
+      display:none;
+    }
   }
   &__body--pc{
     width:356px;
@@ -270,7 +269,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
 .main3{
   width: 100%;;
   height: 740px;
-  background-image:url(../image/bg_wave2.png);
+  background-image:url(img/bg_wave2.png);
   background-repeat: no-repeat;
   background-size:112%;
   background-position: center;
@@ -366,6 +365,13 @@ $font-family:'源ノ角ゴシック',sans-serif;
   border-right: 37px solid transparent;
   border-top: 37px solid #0D67FF;
 }
+@mixin circle{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color:#F6404F;
+  float:left;
+}
 .main4{
   width: 100%;;
   height: 740px;
@@ -418,19 +424,11 @@ $font-family:'源ノ角ゴシック',sans-serif;
   }
   &__circle1{
     margin-left:19px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color:#F6404F;
-    float:left;
+    @include circle;
   }
   &__circle{
     margin-left:39px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color:#F6404F;
-    float:left;
+    @include circle;
   }
   &__figure--sp{
     display:none;
@@ -597,7 +595,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
 .main6{
   width: 100%;;
   height: 680px;
-  background-image:url(../image/ellipse.png);
+  background-image:url(img/ellipse.png);
   background-size:cover;
   background-position: 30% 0%;
   overflow:hidden;
@@ -671,7 +669,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
     font-weight: normal;
   }
   &__item2{
-    background-image:url(../image/bg_people.png);
+    background-image:url(img/bg_people.png);
     background-position: center;
     width:100%;
     height:100px;
@@ -726,7 +724,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
     color:#4B4B4B;
   }
   &__item3{
-    background-image:url(../image/comment.png);
+    background-image:url(img/comment.png);
     background-repeat: repeat-x;
     background-position: 0% 100%;
     width:225px;
@@ -841,7 +839,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
     }
   }
   .main1{
-    background-image:url(../image/sp-wave1.png);
+    background-image:url(img/sp-wave1.png);
     background-repeat: no-repeat;
     background-position: right 75% top 70%;
     background-size:120% 550px;
@@ -857,15 +855,16 @@ $font-family:'源ノ角ゴシック',sans-serif;
       height:177px;
       float:left;
     }
-    &__title--pc{
+    &__title{
       display:none;
+      &--sp{
+        @include font(28px);
+        font-weight: bold;
+        line-height:180%;
+        display:block;
+      }
     }
-    &__title--sp{
-      @include font(28px);
-      font-weight: bold;
-      line-height:180%;
-      display:block;
-    }
+    
     &__body--pc{
       display:none;
     }
@@ -946,7 +945,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
     }
   }
   .main3{
-    background-image:url(../image/sp-wave2.png);
+    background-image:url(img/sp-wave2.png);
     background-repeat: no-repeat;
     background-position: right 40% top 90%;
     background-size:115% 580px;
@@ -1173,7 +1172,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
     &__box2{
       width:375px;
       height:140px;
-      background-image:url(../image/bg_people.png);
+      background-image:url(img/bg_people.png);
       background-position: center;
       @include center;
       overflow: hidden;
