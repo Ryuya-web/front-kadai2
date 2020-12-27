@@ -112,7 +112,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
     display:none;
   }
   &__square1{
-    margin-left:10px;
+    margin-left:15px;
     width:6px;
     height: 6px;
     background-color:#F6404F;
@@ -155,6 +155,11 @@ $font-family:'源ノ角ゴシック',sans-serif;
     height:100%;
   }
 }
+@mixin box {
+  width:322px;
+  height: 410px;
+  margin-top:67px;
+}
 .main2{
   width: 100%;;
   height: 743px;
@@ -194,9 +199,8 @@ $font-family:'源ノ角ゴシック',sans-serif;
     float:left;
   }
   &__box{
-    width:322px;
-    height: 410px;
-    margin-top:67px;
+    @include box;
+
     margin-right:50px;
   }
   &__boxTitle{
@@ -220,9 +224,8 @@ $font-family:'源ノ角ゴシック',sans-serif;
     color:#4B4B4B;
   }
   &__box2{
-    width:322px;
-    height: 410px;
-    margin-top:67px;
+    @include box;
+
   }
   &__box2Title{
     text-align: center;
@@ -245,9 +248,8 @@ $font-family:'源ノ角ゴシック',sans-serif;
     color:#4B4B4B;
   }
   &__box3{
-    width:322px;
-    height: 410px;
-    margin-top:67px;
+    @include box;
+    
     margin-left:50px;
   }
   &__box3Title{
@@ -540,7 +542,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
   &__redLine2{
     height:4px;
     width:24px;
-    margin-left:46.5%;
+    margin-left:47.5%;
     background-color: red;
     border-radius:20%;
   }
@@ -1027,26 +1029,28 @@ $font-family:'源ノ角ゴシック',sans-serif;
       font-size:15px;
     }
   }
+  @mixin triangleSp{
+    border-left: 14.5px solid transparent;
+    border-right: 14.5px solid transparent;
+    border-top: 14.5px solid #0D67FF;
+  }
   .main4{
     &__item{
       width:29px;
       height: 74px;
     }
     &__itemTriangle1{
-      border-left: 14.5px solid transparent;
-      border-right: 14.5px solid transparent;
-      border-top: 14.5px solid #0D67FF;
+      @include triangleSp;
+
     }
     &__itemTriangle2{
-      border-left: 14.5px solid transparent;
-      border-right: 14.5px solid transparent;
-      border-top: 14.5px solid #0D67FF;
+      @include triangleSp;
+
       margin-top:14px;
     }
     &__itemTriangle3--sp{
-      border-left: 14.5px solid transparent;
-      border-right: 14.5px solid transparent;
-      border-top: 14.5px solid #0D67FF;
+      @include triangleSp;
+
       margin-top: 14px;
       display: block;
     }
