@@ -80,8 +80,8 @@ $font-family:'源ノ角ゴシック',sans-serif;
   height: 800px;
   background-image:url(../image/bg_wave1.png);
   background-repeat: no-repeat;
-  background-size:112%;
-  background-position: center;
+  background-position: right 75% top 50%;
+  background-size:120% 750px;
   overflow: hidden;
   &__left{
     width:39.6%;
@@ -249,7 +249,7 @@ $font-family:'源ノ角ゴシック',sans-serif;
   }
   &__box3{
     @include box;
-    
+
     margin-left:50px;
   }
   &__box3Title{
@@ -278,8 +278,8 @@ $font-family:'源ノ角ゴシック',sans-serif;
   height: 740px;
   background-image:url(../image/bg_wave2.png);
   background-repeat: no-repeat;
-  background-size:112%;
-  background-position: center;
+  background-position: right 40% top 90%;
+  background-size:115% 700px;
   overflow: hidden;
   &__top{
     width:548px;
